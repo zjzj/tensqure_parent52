@@ -1,0 +1,14 @@
+spring:
+  rabbitmq:
+    host: 47.107.38.55
+  application:
+    name: tensquare-sms
+server:
+  port: 9009
+aliyun:
+  sms:
+    accessKeyId: LTAIxTJFr0CR4Emj
+    accessKeySecret: olqy5IdNhyNd6pGOQ64oFqb6THaTk4
+    template_code: SMS_172222983
+    sign_name: 快乐学习项目
+
