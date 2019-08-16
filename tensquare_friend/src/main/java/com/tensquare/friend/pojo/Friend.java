@@ -5,6 +5,8 @@ import lombok.Data;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.IdClass;
+import javax.persistence.Table;
+import java.io.Serializable;
 
 /**
  * @author Zj
@@ -13,7 +15,8 @@ import javax.persistence.IdClass;
 @Entity
 @Data
 @IdClass(Friend.class)
-public class Friend {
+@Table(name = "tb_friend")
+public class Friend implements Serializable {
 
   @Id
   private String userid;

@@ -5,13 +5,12 @@ spring:
     name: tensquare-friend
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://47.107.38.55:32769/tensquare_frined?characterEncoding=utf-8
+    url: jdbc:mysql://47.107.38.55:32769/tensquare_friend?characterEncoding=utf-8
     username: root
     password: 123456
   jpa:
     database: mysql
     show-sql: true
-    generate-ddl: true
 eureka:
   client:
     service-url:

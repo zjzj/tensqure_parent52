@@ -10,6 +10,7 @@ import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
 import javax.persistence.criteria.Selection;
 import javax.servlet.http.HttpServletRequest;
+import javax.transaction.Transactional;
 
 import io.jsonwebtoken.Claims;
 import org.apache.commons.lang3.RandomStringUtils;
@@ -35,6 +36,7 @@ import util.JwtUtil;
  * @author Administrator
  */
 @Service
+@Transactional
 public class UserService {
 
   @Autowired
@@ -231,5 +233,10 @@ public class UserService {
       return user;
     }
     return null;
+  }
+
+  public void updateFansCountAndFollowCount(int x, String userid, String friendid) {
+    userDao.updateFansCount(x,friendid);
+    userDao.updateFollowConut(x,userid);
   }
 }
