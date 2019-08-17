@@ -12,6 +12,7 @@ import util.JwtUtil;
 public class UserApplication {
 
 	public static void main(String[] args) {
+    System.setProperty("jasypt.encryptor.password","wqyzj11.");
 		SpringApplication.run(UserApplication.class, args);
 	}
 

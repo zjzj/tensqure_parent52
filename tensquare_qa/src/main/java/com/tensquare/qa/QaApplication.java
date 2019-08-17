@@ -15,6 +15,7 @@ import util.JwtUtil;
 public class QaApplication {
 
 	public static void main(String[] args) {
+    System.setProperty("jasypt.encryptor.password","wqyzj11.");
 		SpringApplication.run(QaApplication.class, args);
 	}
 

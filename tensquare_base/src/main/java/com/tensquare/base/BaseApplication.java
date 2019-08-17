@@ -15,6 +15,7 @@ import util.IdWorker;
 public class BaseApplication {
 
   public static void main(String[] args) {
+    System.setProperty("jasypt.encryptor.password","wqyzj11.");
     SpringApplication.run(BaseApplication.class, args);
   }
 

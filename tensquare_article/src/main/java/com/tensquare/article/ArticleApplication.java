@@ -9,6 +9,7 @@ import util.IdWorker;
 public class ArticleApplication {
 
 	public static void main(String[] args) {
+    System.setProperty("jasypt.encryptor.password","wqyzj11.");
 		SpringApplication.run(ArticleApplication.class, args);
 	}
 
