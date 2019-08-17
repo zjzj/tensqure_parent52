@@ -1,7 +1,0 @@
-server:
-  port: 8003
-spring:
-  rabbitmq:
-    host: 47.107.38.55
-  redis:
-    host: 47.107.38.55
