@@ -15,6 +15,7 @@ public class ParseJwtTest {
     Claims claims = Jwts.parser().setSigningKey("itcast").parseClaimsJws(token).getBody();
     System.out.println("用户id：" + claims.getId());
     System.out.println("用户名字：" + claims.getSubject());
+    System.out.println("111");
 ;
   }
 }
